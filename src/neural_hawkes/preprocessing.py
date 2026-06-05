@@ -215,19 +215,7 @@ def plot_G_marked(G_tensor, g_grid, mark_names=None):
     plt.show()
 
 
-def interp_G_pair_marked(
-    G_tensor: torch.Tensor,
-    t_centers: torch.Tensor,
-    a: int,
-    b: int,
-    m: int,
-    x: torch.Tensor,
-):
-    """
-    Interpole G_ab(t, m) sur la grille t_centers.
-    G_tensor shape : (D, D, M, Q)
-    """
-
+def interp_G_pair_marked(G_tensor, t_centers, a, b, m, x):
     x_flat = x.reshape(-1)
     device = x_flat.device
 
