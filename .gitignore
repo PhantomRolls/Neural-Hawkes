@@ -1,0 +1,28 @@
+20260309-CodeTimotheePourS8P15/
+test.ipynb
+ana.py
+
+# ignorer tout data
+data/*
+
+venv/
+venv38_tick/
+
+# réautoriser les sous-dossiers utiles
+!data/real/
+!data/simulation/
+
+# dans real : tout ignorer sauf certains fichiers
+data/real/*
+!data/real/uniswap_v3_poolHourData.parquet
+!data/real/utils.py
+
+# dans simulation : tout ignorer sauf certains fichiers
+data/simulation/*
+!data/simulation/d=2_big.parquet
+!data/simulation/d=2_gaussian_big.parquet
+!data/simulation/d=2_no_crossexcitation_big.parquet
+!data/simulation/d=2_no_crossexcitation.csv
+!data/simulation/d=2.csv
+!data/simulation/config.yaml
+!data/simulation/utils.pyvenv/

@@ -1,0 +1,12 @@
+numpy
+pandas
+matplotlib
+scipy
+statsmodels
+pyarrow
+pyyaml
+torch
+tqdm
+
+jupyter
+ipykernel
